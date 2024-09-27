@@ -4,12 +4,12 @@ instance_class: F2
 env_variables:
   NODE_ENV: 'production'
 
+# Definisi handler
 handlers:
-  - url: /
-    static_files: public/index.html
-    upload: public/index.html
+  # Jika Anda memiliki file statis (misalnya CSS, JS, gambar), pastikan ada folder 'public'
   - url: /public
     static_dir: public
 
+  # Tangkap semua URL dan arahkan ke aplikasi Node.js
   - url: /.*
     script: auto
