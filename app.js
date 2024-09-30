@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const { Mahasiswa, sequelize } = require('./models');  // Import model Mahasiswa dan koneksi Sequelize
