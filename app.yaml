@@ -8,8 +8,8 @@ env_variables:
 
 handlers:
   - url: /
-    static_files: public
-    upload: public
+    static_files: /public
+    upload: /public
 
   - url: /
     script: auto
